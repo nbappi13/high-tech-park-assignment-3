@@ -106,7 +106,8 @@ main {
 
 .hero-div {
     justify-content: space-between;
-    padding-left: 90px;
+    padding-left: 120px;
+    width: 100%;
     
 }
 
@@ -126,7 +127,7 @@ main {
 }
 
 .hero-div-btn {
-    width: 196px;
+    /* width: 196px; */
     border-radius: 15px;
     padding: 16px 28px;
     margin-top: 20px;
@@ -147,14 +148,17 @@ main {
 }
 
 .hero-div-image {
-    margin-top: 174px;
-    margin-right: 140px;
+    margin-top: 194px;
+    margin-right: 200px;
+
+    
     
 }
 
 .hero-div-image img{
-    margin-left: 61px;
     width: 100%;
+    margin: 0 auto;
+
 }
 
 
@@ -240,6 +244,7 @@ main {
     justify-content: space-between;
     margin-top: 110px;
     width: 100%;
+    gap: 60px;
 }
 
 .about-img {
@@ -267,8 +272,9 @@ main {
 }
 
 .about-p {
+    
     color: rgba(255, 255, 255, 1);
-    margin-right: 120px;
+    margin-right: 80px;
     margin-top: 24px;
 }
 
@@ -350,16 +356,17 @@ main {
 
 /* SERVICE SECTION { */
 
-.container {
+.service-container {
     width: 100%;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     background-color: #FFFFFF;
     align-items: center;
+    margin-left: -50px;
     
 
 }
 
-.container h2 {
+.service-container h2 {
     font-weight: 700;
     font-size: 3rem;
     margin-top: 90px;
@@ -367,11 +374,12 @@ main {
     text-align: center;
     color: rgba(0, 0, 0, 1);
     
+    
 }
 
 .cards {
     margin-left: 100px;
-    margin-right: 140px;
+    margin-right: 110px;
     column-gap: 64px;    
     
 }
@@ -585,8 +593,48 @@ padding-right: 140px;
 /* For Smartphone */
 
 @media screen and (max-width: 576px) {
+    .ftr-contnr-div {
+        flex-direction: column;
+        padding-left: 40px;
+    }
+
+    .right-ftr-div {
+        flex-direction: column;
+        
+    } 
+
+    .left-ftr-div h3 {
+        padding-left: 140px;
+    }
+
+    .ftr-div hr {
+        width: 100%;
+    }
     
+}
+
+
+/* For Tablet  */
+
+@media screen and (min-width: 577px) and (max-width:992px) {
+    .ftr-contnr-div {
+    flex-direction: column;
+    padding-left: 40px;
+
+    }
+
+    .left-ftr-div {
+
+    }
     
+    .ftr-div hr {
+        width: 100%;
+    }
+
+    .right-ftr-div  {
+        padding-left: 0px;
+        gap: 0px;
+    }
 }
 
 
