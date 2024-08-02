@@ -11,6 +11,7 @@
 }
 
 
+
 /* shared styles */
 
 .body-regular-02 {
@@ -39,7 +40,7 @@
 /* nav related styles */
 
 .navbar {
-    max-width: 1440px;
+    max-width: 1547px;
     margin: 0 auto;
 }
 
@@ -78,12 +79,17 @@
 }
 
 
-/* NAV-BAR RESPONSIVE */
+/* RESPONSIVE NAV-BAR  */
 
 @media screen and (max-width: 576px) {
     .navbar {
-        font-size: 0.9rem;
-        padding: 0 10px;
+        font-size: 0.8rem;
+        margin: 0 auto;
+        float: right;
+        display: block;
+        
+        
+
     }
     
 }
@@ -100,12 +106,10 @@ main {
 
 .hero-div {
     justify-content: space-between;
+    padding-left: 90px;
     
 }
 
-.hero-div-content {
-
-}
 
 .hero-div-h1 {
     font-weight: 700;
@@ -138,6 +142,10 @@ main {
     color: rgba(253, 247, 255, 1);
 }
 
+.hero-div-btn:hover {
+    background-color: tomato;
+}
+
 .hero-div-image {
     margin-top: 174px;
     margin-right: 140px;
@@ -150,5 +158,447 @@ main {
 }
 
 
-/* HERO-SECTION RESPONSIVE */
+/* RESPONSIVE HERO-SECTION  */
+
+/* For Smartphone */
+
+@media screen and (max-width: 576px) { 
+    .hero-div {
+        flex-direction: column;
+        /* justify-items: center; */
+    }
+
+    .hero-div {
+        padding-left: 30px;
+    }
+
+    .hero-div-h1 {
+        font-weight: 600;
+        font-size: 2rem;
+        margin-top: 50px;
+        
+    }
+
+    .hero-div-p {
+        font-size: 1rem;
+    }
+
+    .hero-div-btn {
+        /* justify-items: center; */
+    }
+
+    .hero-div-image {
+        margin-top: 50px;
+        margin-left: -60px ;
+    }
+    
+}
+
+/* For Tablet */  
+
+@media screen and (min-width: 577px ) and (max-width: 992px) {
+    .hero-div {
+        flex-direction: column-reverse;
+    }
+
+    .hero-div-h1 {
+        margin: 80px auto;
+        text-align: center;
+    }
+
+    .hero-div-p {
+        text-align: center;
+        background-color: floralwhite;
+    }
+
+    /* .hero-div-btn {
+        margin: 10 auto;
+        text-align: center;
+        justify-items: center;            can't make button in center when use media query
+        align-items: center;
+    }
+
+    .hero-div-btn a {
+        text-align: center;
+        justify-items: center;
+        align-items: center;
+    } */
+
+    
+}
+
+
+/* ABOUT SECTION */
+
+
+.about-sec {
+    max-width: 1859px;
+    width: 100%;
+}
+
+.about-us {
+    justify-content: space-between;
+    margin-top: 110px;
+    width: 100%;
+}
+
+.about-img {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 90px;
+    width: 100%;
+    /* max-width: 100%; */
+    height: auto;
+    border-radius: 10px;
+
+}
+
+
+.about {
+    margin-left: -100px;
+    margin-top: 157px;
+
+}
+
+.about-h2 {
+    font-weight: 700;
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 1);
+}
+
+.about-p {
+    color: rgba(255, 255, 255, 1);
+    margin-right: 120px;
+    margin-top: 24px;
+}
+
+.about-btn {
+    margin-top: 32px;
+    border-radius: 8px;
+    padding: 16px 28px;
+    border: none;
+    background-color: white;
+}
+
+.about-btn a {
+    
+    font-weight: 600px;
+    font-size: 1.125rem;
+    text-decoration: none;
+    color: rgba(28, 130, 250, 1);
+}
+
+.about-btn:hover {
+    background-color: tomato;
+}
+
+
+
+/* RESPONSIVE ABOUT SECTION */
+
+/* For Smartphone */
+
+@media screen and (max-width: 576px) {
+    .about-us {
+        flex-direction: column;
+        
+        
+    }
+
+    .about {
+        margin-left: 20px;
+        margin-top: 0;
+    }
+
+    .about-img {
+        padding-top: 40px;
+        padding-left: 20px;
+        width: 100%;
+    }
+
+    .about-img img {
+        padding: 0;
+        width: 100%;
+
+    }
+
+    .about {
+        /* margin: 0 auto; */
+    }
+    
+}
+
+/* For Tablet */
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .about-us {
+        flex-direction: column-reverse;
+        margin-top: 70px;
+    }
+
+    .about {
+        margin-top: 50px;
+        margin-left: 100px;
+    }
+}
+
+
+
+
+
+
+
+/* SERVICE SECTION { */
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    align-items: center;
+    
+
+}
+
+.container h2 {
+    font-weight: 700;
+    font-size: 3rem;
+    margin-top: 90px;
+    margin-bottom: 56px;
+    text-align: center;
+    color: rgba(0, 0, 0, 1);
+    
+}
+
+.cards {
+    margin-left: 100px;
+    margin-right: 140px;
+    column-gap: 64px;    
+    
+}
+
+
+.card {
+    padding: 10px;
+    background-color: #1C82FA;
+    border-radius: 16px;
+    width: 344px;
+    height: 385px;
+    box-shadow: 0px 16px 32px -8px rgba(12, 12, 13, 0.4);
+    
+}
+
+.card img {
+padding-top: 36px;
+padding-left: 140px;
+padding-right: 140px;
+}
+
+.card h3 {
+    font-weight: 700;
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+}
+.card p {
+    width: 291px;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 24px 32px 30px 23px;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    align-items: center;
+    opacity: 0.7;
+}
+
+.card button {
+    width: 114px;
+    height: 44px;
+    margin-top: -10px;
+    margin-bottom: 36px;
+    margin-left: 112px;
+    margin-right: 118px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 1);
+    border: none;
+}
+
+.card button a {
+    /* margin-top: -10px; */
+    font-weight: 600;
+    font-size: 1.125rem;
+    color: rgba(28, 130, 250, 1);
+    text-decoration: none;
+}
+
+
+.card button:hover {
+    background-color: tomato;
+}
+
+
+
+/* RESPONSIVE SERVICE SECTION { */
+
+/* For Smartphone */
+
+@media screen and (max-width: 576px) {
+
+   .cards {
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+
+   } 
+}
+
+/* For Tablet  */
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .cards {
+        flex-direction: column;
+        gap: 50px;
+   }
+     
+   .container {
+    background-color: whitesmoke;
+   }
+
+}
+
+#footer-section {
+    max-width: 1440px;
+    width: 100%;
+    background-color: rgba(28, 130, 250, 1);
+    margin-top: 120px;
+}
+
+.ftr-div {
+    
+}
+
+.ftr-div hr {
+    width: 1160px;
+    margin-top: 66px;
+}
+
+#copyright {
+    font-weight: 400;
+    font-size: 0.89rem;
+    color: rgba(240, 240, 240, 1);
+    opacity: 0.7;
+    margin-top: 24px;
+    text-align: center;
+    padding-bottom: 20px;
+    
+
+}
+
+
+.ftr-contnr-div {
+    padding-top: 80px;
+    padding-left: 140px;
+}
+
+.left-ftr-div {
+    
+
+}
+
+.left-ftr-div h3 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 1);
+    opacity: 0.97;
+
+    /* padding-left: 140px; */
+} 
+
+.left-ftr-div p {
+    width: 415px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    opacity: 0.75;
+}
+
+.right-ftr-div {
+
+    padding-top: 54px;
+    gap: 60px;
+    margin-left: 91px;
+    
+    /* color: rgba(255, 255, 255, 1); */
+}
+
+.right-ftr-col-1 {
+    width: 163px;
+} 
+
+/* .right-ftr-col-1 ul */
+
+.right-ftr-col-1 ul li {
+    list-style: none;
+}
+
+.right-ftr-col-1 ul li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    opacity: 0.85;
+    
+}
+
+.right-ftr-col-2  {
+    width: 163px;
+}
+
+/* .right-ftr-col-2 ul */
+
+.right-ftr-col-2 ul li {
+    list-style: none;
+}
+
+.right-ftr-col-2 ul li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    opacity: 0.85;
+}
+
+.right-ftr-col-3 {
+    width: 203px;
+}
+
+/* .right-ftr-col-3 ul  */
+
+.right-ftr-col-3 ul li {
+    list-style: none;
+}
+
+.right-ftr-col-3 ul li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    opacity: 0.85;
+}
+
+
+/* RESPONSIVE FOOTER SECTION */
+
+/* For Smartphone */
+
+@media screen and (max-width: 576px) {
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
