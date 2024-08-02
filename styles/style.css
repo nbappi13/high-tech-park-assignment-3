@@ -76,3 +76,79 @@
 .nav-links a {
     color: white;
 }
+
+
+/* NAV-BAR RESPONSIVE */
+
+@media screen and (max-width: 576px) {
+    .navbar {
+        font-size: 0.9rem;
+        padding: 0 10px;
+    }
+    
+}
+
+
+/* HERO-SECTION RELATED STYLES */
+
+
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+.hero-div {
+    justify-content: space-between;
+    
+}
+
+.hero-div-content {
+
+}
+
+.hero-div-h1 {
+    font-weight: 700;
+    font-size: 4rem;
+    margin-top: 194px;
+
+}
+
+.hero-div-p {
+    font-weight: 400;
+    font-size: 1.125rem;
+    color: rgba(82, 82, 82, 1);
+    margin-top: 15px;
+}
+
+.hero-div-btn {
+    width: 196px;
+    border-radius: 15px;
+    padding: 16px 28px;
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 1.125rem;
+    text-decoration: none;
+    background-color: rgba(28, 130, 250, 1);
+    border: none;
+}
+
+.hero-div-btn a {
+    text-decoration: none;
+    color: rgba(253, 247, 255, 1);
+}
+
+.hero-div-image {
+    margin-top: 174px;
+    margin-right: 140px;
+    
+}
+
+.hero-div-image img{
+    margin-left: 61px;
+    width: 100%;
+}
+
+
+/* HERO-SECTION RESPONSIVE */
+
